@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 1200px;
+    margin: 0 50px;
+    font-family: Garamond, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+article {
+    width: 65%;
+    margin-top: 20px;
+    margin-right: 50px;
+    display: inline-block;
+    float: left;
+}
+
+img {
+    max-width: 400px;
+    min-width: 300px;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    float: right;
+}
+
+footer {
+    clear: left;
+    position: relative;
+    top: 100px;
+}
