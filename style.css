@@ -5,9 +5,22 @@
 }
 
 body {
-    margin: 40px 60px;
     font-family: Garamond, sans-serif;
     font-size: 20px;
     line-height: 1.5;
     background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    background-color:purple;
+    font-weight:bold;
+    font-size: 22px;
+    padding: 10px 15px;
+    border:1px solid whitesmoke;
 }
