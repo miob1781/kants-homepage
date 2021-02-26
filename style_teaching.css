@@ -1,6 +1,90 @@
-header {
-    background-image: url(./220px-Albertinum\,_Stoa_Kantiana_\(1875\).JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+body {
+    margin: 40px 60px;
+}
+
+#nav-container {
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: 1px;
+}
+
+#intro {
+    max-width: 650px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 10px 0;
+}
+
+#intro p {
+    max-width: 300px;
+    margin-right: 50px;
+}
+
+#intro div {
+    height: auto;
+    max-width: 300px;
+}
+
+#intro div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#lectures {
+    max-width: 650px;
+    color: white;
+    background-color: purple;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.lecture {
+    margin-bottom: 5px;
+}
+
+#lectures h2 {
+    font-size: 26px;
+    width: fit-content;
+    padding: 0 5px;
+}
+
+#lectures p {
+    margin-left: 60px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+i.fa-plus-circle {
+    margin-right: 5px;
+}
+
+i.fa-minus-circle {
+    display: none;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 786px) {
+    #intro p {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    
+    body {
+        margin: 40px 20px;
+        }
+    
+    #nav-container {
+        justify-content: flex-start;
+        margin-bottom: 15px;
+        position: relative;
+        right: 2px;
+    }
+
+
 }

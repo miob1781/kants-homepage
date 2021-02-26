@@ -111,6 +111,8 @@ body {
     #nav-container {
         justify-content: flex-start;
         margin-bottom: 15px;
+        position: relative;
+        right: 1px;
     }
 
     #books {

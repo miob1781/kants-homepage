@@ -10,10 +10,10 @@
 
 <body>
     <header>
-        <div id="nav-container">
+        <div id="nav-container" role="presentation">
             <nav>
                 <a href="./index.html">Home</a>
-                <a href="./bio.html">Biography</a>
+                <a href="./bio.html" class="bio bs">Biography</a>
                 <a href="./teaching.html">Teaching</a>
             </nav>
         </div>
@@ -21,69 +21,69 @@
     </header>
 
     <main>
-        <section>
+        <section role="presentation">
             <p class="general">I've been writing philosophical books since I was a young-ish student. But the ones which I consider to constitute my - as I call it - <em>Critical</em> project really start only with the <strong>Critique of Pure Reason</strong>. Please click on the books to learn more about them.</p>
             <p class="general">Presently, I am working on text book versions of my lectures, as well as on a book which aims to complete the transition from metaphysics of nature to empirical science of nature. I don't know if I will ever complete any of these projects before I die, but I am doing my best.</p>
         </section>
-        <section id="books">
-            <div id="overlay"></div>
-            <div class="book" id="cpr" style="grid-area: cpr;">
+        <section id="books" role="presentation">
+            <div id="overlay" role="presentation"></div>
+            <div class="book cpr" style="grid-area: cpr;" role="presentation">
                 <a href="#cpr-summary"><img src="./cpr_image.png" alt="Critique of Pure Reason" id="cpr-img"></a>
             </div>
-            <div class="book" id="gr" style="grid-area: gr;">
+            <div class="book gr" style="grid-area: gr;" role="presentation">
                 <a href="#gr-summary"><img src="./Groundwork_image.jpg" alt="Groundwork to a Metaphysics of Morals" id="gr-img"></a>
             </div>
-            <div class="book" id="mfns" style="grid-area: mfns;">
+            <div class="book mfns" style="grid-area: mfns;" role="presentation">
                 <a href="#mfns-summary"><img src="./mfns-img.jpg" alt="Metaphysical Foundations of Natural Science" id="mfns-img"></a>
             </div>
-            <div class="book" id="cprr" style="grid-area: cprr;">
+            <div class="book cprr" style="grid-area: cprr;" role="presentation">
                 <a href="#cprr-summary"><img src="./cprr-img.jpg" alt="Critique of Practical Reason" id="cprr-img"></a>
             </div>
-            <div class="book" id="cpj" style="grid-area: cpj;">
+            <div class="book cpj" style="grid-area: cpj;" role="presentation">
                 <a href="#cpj-summary"><img src="./cpj-img.jpg" alt="Critique of the Power of Judgment" id="cpj-img"></a>
             </div>
-            <div class="book" id="rel" style="grid-area: rel;">
+            <div class="book rel" style="grid-area: rel;" role="presentation">
                 <a href="#rel-summary"><img src="./rel-img.jpg" alt="Religion within the limits of Reason Alone" id="rel-img"></a>
             </div>
-            <div class="book" id="peace" style="grid-area: peace;">
+            <div class="book peace" style="grid-area: peace;" role="presentation">
                 <a href="#peace-summary"><img src="./peace-img.jpg" alt="On Eternal Peace" id="peace-img"></a>
             </div>
-            <div class="book" id="mm" style="grid-area: mm;">
+            <div class="book mm" style="grid-area: mm;" role="presentation">
                 <a href="#mm-summary"><img src="./mm-img.jpg" alt="Metaphysics of Morals" id="mm-img"></a>
             </div>
 
-                <article class="summary" id="cpr-summary">
-                    <p>In the <strong>Critique of Pure Reason</strong>, I perform a Critical investigation into the possibility and limits of metaphysics. I argue that metaphysics is possible as regards appearances, since experience is dependent both on our sense and intellect. However, we cannot extend our cognition to things in themselves, so all-important questions of special metaphysics - concerning immortality, freedom, and God - are beyond the scope of our possible knowledge. Furthermore, I contend that reason becomes dialectical when it strives for completion, which renders the ideas of reason illusory. Nonetheless, the ideas are of legitimate regulative use. I conclude by considerations about the method and end of philosophy, the highest good, and the modes of assent.</p>
-                    <p class="close">Close</p>
-                </article>
-                <article class="summary" id="gr-summary">
-                    <p>The <strong>Groundwork of the Metaphysics of Morals</strong> inquires the source of the moral law and its justification. Beginning with common moral judgment, I investigate the concepts of duty and of a good will. Next, I argue that the only possible categorical imperative is of the form: <em>Act only such that you can will of the maxim of your action that it become a universal law.</em> Finally, I argue that the justification of the categorical imperative is rooted in the freedom of human will.</p>
-                    <p class="close">Close</p>
-                </article>
-                <article class="summary" id="mfns-summary">
-                    <p>The <strong>Metaphysical Foundations of Natural Science</strong> provide an account of the transition from metaphysics to natural science. In this writing, I examine the concept of physical matter a priori by exposing the concept of matter according to the table of categories. Among others, I argue that all motion is only observable in relative space and that matter requires repulsive and attractive forces as original forces. I also attempt to prove three laws of mechanics.</p>
-                    <p class="close">Close</p>
-                </article>
-                <article class="summary" id="cprr-summary">
-                    <p>The <strong>Critique of Practical Reason</strong> determines the reach and limits of practical reason. I argue that the moral law is the categorical imperative; thus, the will can only be determined formally. Furthermore, I hold that, whereas freedom is the ground of cognition of the moral law, the moral law is the ground of cognition of freedom - we become aware of the moral law by a fact of reason. I also investigate the way how the will becomes practical by the feeling of respect. While practical cognition of these matters differs from theoretical cognition in important respects, practical cognition only becomes dialectical when it comes to the object of pure practical reason (the highest good). This leads to the postulates of immortality and God. I conclude by brief remarks on moral education.</p>
-                    <p class="close">Close</p>
-                </article>            
-                <article class="summary" id="cpj-summary">
-                    <p>The <strong>Critique of the Power of Judgment</strong> is the third and final of my critical investigations. I attempt to shed light on the use of the reflective power of judgment, which tries to find a general rule for a particular judgment. The reflective power of judgment is crucial for arts as well as for teleology, which divides my book in two major parts. In part I, I argue that beautiful is whatever pleases without taking an interest in it and distinguish the beautiful from the sublime. Part II considers teleology in organisms as well as the final end of nature. The latter leads me anew to considerations about proofs of God.</p>
-                    <p class="close">Close</p>
-                </article>            
-                <article class="summary" id="rel-summary">
-                    <p><strong>Religion within the Limits of Reason Alone</strong> considers the need for religion on a pure rational basis, as a matter belonging to the philosophical faculty. This contrasts starkly with the approach pursued by the theological faculty, which bases religion on holy scriptures. My book argues that we can only hope to overcome the radical evil in human nature with divine assistance. This also leads to the idea of an ethical commonwealth, which again can only be instituted by God. I warn against corrupted forms of serving God, which are tantamount to superstition.</p>
-                    <p class="close">Close</p>
-                </article>            
-                <article class="summary" id="peace-summary">
-                    <p><strong>On Eternal Peace</strong> argues for the duty to strive for eternal peace in the satirical form of a treaty - including preliminary, definitive, and secret articles, as well as appendices concerning the warranty of eternal peace. I contend that there are three juridical relations - civic right, right of nations, and cosmopolitan right - each of which require a form of peace: a republic, a league of nations, and hospitality to foreign citizens.</p>
-                    <p class="close">Close</p>
-                </article>            
-                <article class="summary" id="mm-summary">
-                    <p>The <strong>Metaphysics of Morals</strong> has appeared in two volumes, the <strong>Metaphysical Foundations of Right</strong> and the <strong>Metaphysical Foundations of Virtue</strong>. The first volume deals with duties of right. Right is the realm of the free choice (as regards external actions) and can be enforced. I argue that a rightful community can only be established in the form of a state (ultimately a republic), not in the state of nature. The second volume, by contrast, concerns the duties of virtue, which cannot be enforced. I establish one's own perfection and others' happiness as ends which are duties in themselves. In the main part, I discuss particular perfect and imperfect duties to oneself and to others.</p>
-                    <p class="close">Close</p>
-                </article>
+            <article class="summary cpr" role="presentation">
+                <p>In the <strong>Critique of Pure Reason</strong>, I perform a Critical investigation into the possibility and limits of metaphysics. I argue that metaphysics is possible as regards appearances, since experience is dependent both on our sense and intellect. However, we cannot extend our cognition to things in themselves, so all-important questions of special metaphysics - concerning immortality, freedom, and God - are beyond the scope of our possible knowledge. Furthermore, I contend that reason becomes dialectical when it strives for completion, which renders the ideas of reason illusory. Nonetheless, the ideas are of legitimate regulative use. I conclude by considerations about the method and end of philosophy, the highest good, and the modes of assent.</p>
+                <p class="close">Close</p>
+            </article>
+            <article class="summary gr" role="presentation">
+                <p>The <strong>Groundwork of the Metaphysics of Morals</strong> inquires the source of the moral law and its justification. Beginning with common moral judgment, I investigate the concepts of duty and of a good will. Next, I argue that the only possible categorical imperative is of the form: <em>Act only such that you can will of the maxim of your action that it become a universal law.</em> Finally, I argue that the justification of the categorical imperative is rooted in the freedom of human will.</p>
+                <p class="close">Close</p>
+            </article>
+            <article class="summary mfns" role="presentation">
+                <p>The <strong>Metaphysical Foundations of Natural Science</strong> provide an account of the transition from metaphysics to natural science. In this writing, I examine the concept of physical matter a priori by exposing the concept of matter according to the table of categories. Among others, I argue that all motion is only observable in relative space and that matter requires repulsive and attractive forces as original forces. I also attempt to prove three laws of mechanics.</p>
+                <p class="close">Close</p>
+            </article>
+            <article class="summary cprr" role="presentation">
+                <p>The <strong>Critique of Practical Reason</strong> determines the reach and limits of practical reason. I argue that the moral law is the categorical imperative; thus, the will can only be determined formally. Furthermore, I hold that, whereas freedom is the ground of cognition of the moral law, the moral law is the ground of cognition of freedom - we become aware of the moral law by a fact of reason. I also investigate the way how the will becomes practical by the feeling of respect. While practical cognition of these matters differs from theoretical cognition in important respects, practical cognition only becomes dialectical when it comes to the object of pure practical reason (the highest good). This leads to the postulates of immortality and God. I conclude by brief remarks on moral education.</p>
+                <p class="close">Close</p>
+            </article>            
+            <article class="summary cpj" role="presentation">
+                <p>The <strong>Critique of the Power of Judgment</strong> is the third and final of my critical investigations. I attempt to shed light on the use of the reflective power of judgment, which tries to find a general rule for a particular judgment. The reflective power of judgment is crucial for arts as well as for teleology, which divides my book in two major parts. In part I, I argue that beautiful is whatever pleases without taking an interest in it and distinguish the beautiful from the sublime. Part II considers teleology in organisms as well as the final end of nature. The latter leads me anew to considerations about proofs of God.</p>
+                <p class="close">Close</p>
+            </article>            
+            <article class="summary rel" role="presentation">
+                <p><strong>Religion within the Limits of Reason Alone</strong> considers the need for religion on a pure rational basis, as a matter belonging to the philosophical faculty. This contrasts starkly with the approach pursued by the theological faculty, which bases religion on holy scriptures. My book argues that we can only hope to overcome the radical evil in human nature with divine assistance. This also leads to the idea of an ethical commonwealth, which again can only be instituted by God. I warn against corrupted forms of serving God, which are tantamount to superstition.</p>
+                <p class="close">Close</p>
+            </article>            
+            <article class="summary peace" role="presentation">
+                <p><strong>On Eternal Peace</strong> argues for the duty to strive for eternal peace in the satirical form of a treaty - including preliminary, definitive, and secret articles, as well as appendices concerning the warranty of eternal peace. I contend that there are three juridical relations - civic right, right of nations, and cosmopolitan right - each of which require a form of peace: a republic, a league of nations, and hospitality to foreign citizens.</p>
+                <p class="close">Close</p>
+            </article>            
+            <article class="summary mm" role="presentation">
+                <p>The <strong>Metaphysics of Morals</strong> has appeared in two volumes, the <strong>Metaphysical Foundations of Right</strong> and the <strong>Metaphysical Foundations of Virtue</strong>. The first volume deals with duties of right. Right is the realm of the free choice (as regards external actions) and can be enforced. I argue that a rightful community can only be established in the form of a state (ultimately a republic), not in the state of nature. The second volume, by contrast, concerns the duties of virtue, which cannot be enforced. I establish one's own perfection and others' happiness as ends which are duties in themselves. In the main part, I discuss particular perfect and imperfect duties to oneself and to others.</p>
+                <p class="close">Close</p>
+            </article>
         </section>    
     </main>
 </body>
