@@ -18,9 +18,13 @@ nav {
 
 nav a {
     color: white;
-    background-color:purple;
-    font-weight:bold;
+    background-color: purple;
+    font-weight: bold;
     font-size: 22px;
     padding: 10px 15px;
-    border:1px solid whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+nav a:hover {
+    background-color: rgb(167, 3, 167);
 }

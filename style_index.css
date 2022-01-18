@@ -40,22 +40,9 @@ main {
     display: block;
 }
 
-@media only screen and (max-width: 803px){
-
-    #nav-container {
-        justify-content: flex-start;
-        margin-bottom: 15px;
-
-    }
-    #portrait {
-        margin: 20px 0;
-        max-width: 300px;
-    }
-}
-
 footer {
     position: relative;
-    top: 80px;
+    top: 60px;
     padding: 20px 0 20px 60px;
     background-color: purple;
 }
@@ -64,4 +51,26 @@ footer p {
     margin-bottom: 10px;
     font-size: 18px;
     color: white;
+}
+
+@media only screen and (max-width: 803px){
+
+    header, main {
+        margin-left: 20px;
+    }
+
+    #nav-container {
+        justify-content: flex-start;
+        margin-bottom: 15px;
+
+    }
+
+    #portrait {
+        margin: 20px 0;
+        max-width: 85vw;
+    }
+
+    footer {
+        padding-left: 20px;
+    }
 }

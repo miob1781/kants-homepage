@@ -45,15 +45,14 @@ body {
     margin-bottom: 5px;
 }
 
-#lectures h2 {
+.lecture h2 {
     font-size: 26px;
     width: fit-content;
     padding: 0 5px;
 }
 
-#lectures p {
-    margin-left: 60px;
-    margin-bottom: 5px;
+.lecture p {
+    margin: 15px 0 20px 60px;
     display: none;
 }
 
@@ -67,9 +66,15 @@ i.fa-minus-circle {
 }
 
 @media only screen and (max-width: 786px) {
+
     #intro p {
-        max-width: 300px;
+        max-width: 100%;
         margin-top: 20px;
+        margin-right: 0;
+    }
+
+    #intro div {
+        max-width: 100%;
     }
 }
 
@@ -86,5 +91,7 @@ i.fa-minus-circle {
         right: 2px;
     }
 
-
+    .lecture p {
+        margin-left: 20px;
+    }
 }

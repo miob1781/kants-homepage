@@ -1,35 +1,37 @@
-const olay = document.getElementById("overlay")
-const close = document.querySelectorAll(".close")
-const titles = [".cpr", ".gr", ".mfns", ".cprr", ".cpj", ".rel", ".peace", ".mm"]
+const olay = document.getElementById("overlay");
+const titles = [".cpr", ".gr", ".mfns", ".cprr", ".cpj", ".rel", ".peace", ".mm"];
+
+const onClose = event => {
+    event.target.style.backgroundColor = "rgb(167, 3, 167)";
+    event.target.style.cursor = "pointer";
+};
+
+const outClose = event => {
+    event.target.style.backgroundColor = "inherit";
+};
 
 titles.forEach(t => {
 
-    let book = document.querySelector(t + ".book")
-    let summary = document.querySelector(t + ".summary")
+    const book = document.querySelector(t + ".book");
+    const summary = document.querySelector(t + ".summary");
+    const close = summary.querySelector(".close");
+    const domRectBook = book.getBoundingClientRect();
+    const domRectSummary = summary.getBoundingClientRect();
 
-    let onClose = event => {
-        event.target.style.backgroundColor = "rgb(167, 3, 167)";
-        event.target.style.cursor = "pointer";
-    };
-    
-    let outClose = event => {
-        event.target.style.backgroundColor = "inherit";
-    };
-    
-    close.forEach(el => {el.addEventListener("mouseover", onClose)})
-    close.forEach(el => {el.addEventListener("mouseout", outClose)})
-    
-    let openSummary = () => {
+    const openSummary = () => {
         olay.style.visibility = "visible";
         summary.style.visibility = "visible";
+        window.scroll(domRectSummary.x, domRectSummary.y)
     };
 
-    let closeSummary = () => {
+    const closeSummary = () => {
         olay.style.visibility = "hidden";
         summary.style.visibility = "hidden";
     };
         
-    book.querySelector("img").addEventListener("click", openSummary)
-    close.forEach(el => {el.addEventListener("click", closeSummary)})
-    olay.addEventListener("click", closeSummary)
-})
+    close.addEventListener("mouseover", onClose);
+    close.addEventListener("mouseout", outClose);   
+    book.querySelector("img").addEventListener("click", openSummary);
+    close.addEventListener("click", closeSummary);
+    olay.addEventListener("click", closeSummary);
+});
