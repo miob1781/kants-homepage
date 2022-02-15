@@ -1,0 +1,49 @@
+body {
+  margin: 40px 60px;
+}
+
+nav {
+  position: relative;
+  left: 250px;
+}
+
+p {
+  max-width: 600px;
+}
+
+#building {
+  position: relative;
+  top: 25px;
+  width: 400px;
+  height: auto;
+}
+#building img {
+  max-width: 100%;
+  min-width: 400px;
+  height: auto;
+  display: block;
+  border: 1px solid grey;
+  box-shadow: 10px 10px 15px grey;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 40px 20px;
+  }
+
+  nav {
+    left: 0;
+    margin-bottom: 15px;
+    min-width: 200px;
+  }
+
+  #building {
+    max-width: 90vw;
+    width: 90vw;
+  }
+  #building img {
+    min-width: 90vw;
+  }
+}
+
+/*# sourceMappingURL=style_bio.css.map */

@@ -1,0 +1,89 @@
+body {
+  margin: 40px 60px;
+}
+
+#nav-container {
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 1px;
+}
+
+#intro {
+  max-width: 650px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin: 10px 0;
+}
+#intro p {
+  max-width: 300px;
+  margin-right: 50px;
+}
+#intro div {
+  height: auto;
+  max-width: 300px;
+}
+#intro div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#lectures {
+  max-width: 650px;
+  color: white;
+  background-color: purple;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.lecture {
+  margin-bottom: 5px;
+}
+.lecture h2 {
+  font-size: 1.25rem;
+  width: fit-content;
+  padding: 0 5px;
+}
+.lecture p {
+  margin: 15px 0 20px 60px;
+  display: none;
+}
+
+i.fa-minus-circle, i.fa-plus-circle {
+  margin-right: 5px;
+}
+
+i.fa-minus-circle {
+  display: none;
+}
+
+@media only screen and (max-width: 786px) {
+  #intro p {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  #intro div {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  body {
+    margin: 40px 20px;
+  }
+
+  #nav-container {
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    position: relative;
+    right: 2px;
+  }
+
+  .lecture p {
+    margin-left: 20px;
+  }
+}
+
+/*# sourceMappingURL=style_teaching.css.map */

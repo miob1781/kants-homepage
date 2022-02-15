@@ -1,3 +1,5 @@
+@use "variables";
+
 header {
     margin: 40px 60px 0 60px;
 }
@@ -20,10 +22,10 @@ main {
     max-width: 600px;
     margin-right: 5%;
     display: inline-block;
-}
-
-#welcome p {
-    margin: 10px 0;
+    
+    p {
+        margin: 10px 0;
+    }
 }
 
 #portrait {
@@ -32,25 +34,25 @@ main {
     max-width: 400px;
     flex: 1 300px;
     display: inline-block;
-}
 
-#portrait img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 }
 
 footer {
     position: relative;
     top: 60px;
     padding: 20px 0 20px 60px;
-    background-color: purple;
-}
+    background-color: variables.$dark-color;
 
-footer p {
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    color: white;
+    p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        color: variables.$text-color-on-dark;
+    }
 }
 
 @media only screen and (max-width: 803px){

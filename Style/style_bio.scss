@@ -1,5 +1,7 @@
+@use "variables";
+
 body {
-    margin: 40px 60px;
+    @extend %body-margin;
 }
 
 nav {
@@ -17,15 +19,15 @@ p {
     width: 400px;
     height: auto;
 
+    img {
+        max-width: 100%;
+        min-width: 400px;
+        height: auto;
+        display: block;
+        border: 1px solid grey;
+        box-shadow: 10px 10px 15px grey;
+    }
 }
-
-#building img {
-    max-width: 100%;
-    min-width: 400px;
-    height: auto;
-    display: block;
-    border: 1px solid grey;
-    box-shadow: 10px 10px 15px grey;}
 
 @media only screen and (max-width: 600px) {
 
@@ -42,9 +44,9 @@ p {
     #building {
         max-width: 90vw;
         width: 90vw;
-    }
-
-    #building img {
-        min-width: 90vw;
+    
+        img {
+            min-width: 90vw;
+        }
     }
 }
