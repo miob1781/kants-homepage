@@ -1,1 +1,1 @@
-Kants personal homepage - created in 1799!
+Kant's personal homepage - created in 1799!
