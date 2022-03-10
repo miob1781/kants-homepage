@@ -46,6 +46,10 @@ body {
   width: fit-content;
   padding: 0 5px;
 }
+.lecture h2:hover {
+  background-color: #a703a7;
+  cursor: pointer;
+}
 .lecture p {
   margin: 15px 0 20px 60px;
   display: none;

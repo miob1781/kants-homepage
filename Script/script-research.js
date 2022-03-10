@@ -1,37 +1,26 @@
-const olay = document.getElementById("overlay");
-const titles = [".cpr", ".gr", ".mfns", ".cprr", ".cpj", ".rel", ".peace", ".mm"];
+$(function () {
+    const titles = [".cpr", ".gr", ".mfns", ".cprr", ".cpj", ".rel", ".peace", ".mm"];
+    const olay = $("#overlay");
+    const close = $(".close");
 
-const onClose = event => {
-    event.target.style.backgroundColor = "rgb(167, 3, 167)";
-    event.target.style.cursor = "pointer";
-};
+    titles.forEach(title => {
+        const book = $(title + ".book").find("img");
+        const summary = $(title + ".summary");
+        const domRectSummary = document.querySelector(title + ".summary").getBoundingClientRect();
 
-const outClose = event => {
-    event.target.style.backgroundColor = "inherit";
-};
+        const openSummary = () => {
+            olay.css({visibility: "visible", opacity: 0}).fadeTo(600, 0.5)
+            summary.css({visibility: "visible"});
+            window.scroll(domRectSummary.x, domRectSummary.y)
+        };
 
-titles.forEach(t => {
+        const closeSummary = () => {
+            olay.css("visibility", "hidden");
+            summary.css("visibility", "hidden");
+        };
 
-    const book = document.querySelector(t + ".book");
-    const summary = document.querySelector(t + ".summary");
-    const close = summary.querySelector(".close");
-    const domRectBook = book.getBoundingClientRect();
-    const domRectSummary = summary.getBoundingClientRect();
-
-    const openSummary = () => {
-        olay.style.visibility = "visible";
-        summary.style.visibility = "visible";
-        window.scroll(domRectSummary.x, domRectSummary.y)
-    };
-
-    const closeSummary = () => {
-        olay.style.visibility = "hidden";
-        summary.style.visibility = "hidden";
-    };
-        
-    close.addEventListener("mouseover", onClose);
-    close.addEventListener("mouseout", outClose);   
-    book.querySelector("img").addEventListener("click", openSummary);
-    close.addEventListener("click", closeSummary);
-    olay.addEventListener("click", closeSummary);
+        book.on("click", openSummary);
+        close.on("click", closeSummary);
+        olay.on("click", closeSummary);
+    });
 });

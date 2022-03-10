@@ -76,6 +76,7 @@ body {
 
     &:hover {
         background-color: variables.$hover-color;
+        cursor: pointer;
     }
 }
 

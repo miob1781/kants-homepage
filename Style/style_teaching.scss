@@ -51,6 +51,11 @@ body {
         font-size: 1.25rem;
         width: fit-content;
         padding: 0 5px;
+
+        &:hover {
+            background-color: variables.$hover-color;
+            cursor: pointer;
+        }
     }
 
     p {
